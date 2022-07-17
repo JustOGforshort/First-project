@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carzoom</title>
+    <link rel="icon" type="image/x-icon" href="images/icon2.png">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=poppins">
+
+</head>
+
+<body>
+    <!-- <div class="logo">
+        <img src="images/Carzoom.png">
+    </div>
+    <ul>
+        <div class="home">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Car brands</a>
+                <div class="dropdown-content">
+                    <a href="#">Audi</a>
+                    <a href="#">Mercedez benz</a>
+                    <a href="#">Mazda</a>
+                    <a href="#">Mistibushi</a>
+                    <a href="#">Toyota</a>
+                    <a href="#">Kia</a>
+                    <a href="#">BMW</a>
+                    <a href="#">Lexus</a>
+                    <a href="#">Acura</a>
+                    <a href="#">Hyundai</a>
+                    <a href="#">Honda</a>
+                </div>
+            </li>
+            <li><a href="#">Car Diagnostic</a></li>
+            <li><a href="#">FAQs</a></li>
+        </div>
+        
+        <li class="login"><a href="#">Register</a></li>
+        <li class="login"><a href="#">Login</a></li>
+        <img src="images/Search.svg">
+    </ul> -->
+    <script>
+        function myFunction(){
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onlick = function(e){
+            if (!e.target.matches('.dropbtn')){
+                var myDropdown= document.getElementById("myDropdown");
+                if(myDropdown.classList.contains('show')){
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+    
+    <div class="topnav">
+        <div class="topnav_logo">
+            <img src="images/Carzoom.png" alt="Carzoom icon">
+        </div>
+        <div class="topnav_home">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <div class="dropdown">
+                <a class="dropbtn" onclick="myFunction()">Car brands
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown_content" id="myDropdown">
+                    <a href="#">Audi</a>
+                    <a href="#">Mercedez benz</a>
+                    <a href="#">Mazda</a>
+                    <a href="#">Mistibushi</a>
+                    <a href="#">Toyota</a>
+                    <a href="#">Kia</a>
+                    <a href="#">BMW</a>
+                    <a href="#">Lexus</a>
+                    <a href="#">Acura</a>
+                    <a href="#">Hyundai</a>
+                    <a href="#">Honda</a>
+                </div>
+            </div>
+            <a href="#">Car diagnostic</a>
+            <a href="#">FAQs</a>
+        </div>
+        <div class="topnav_login">
+            <a href="#">Register</a>
+            <a href="#">Log in</a>
+            <img src="images/Search.svg">
+        </div>
+    </div>
+
+    <div class="heropage">
+        <img src="images/homecar.jpg" alt="Car image">
+
+        <div class="search">
+            <form class="search_box">
+                <select class="inputbox" name="make" placeholder="Car make">
+                    <option value="mazda">Mazda</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="lexus">Lexus</option>
+                </select>
+                <select class="inputbox" name="model" placeholder="Car model">
+                    <option value="mazda">Mazda</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="lexus">Lexus</option>
+                </select>
+                <input type="number" name="price" class="inputbox" maxlength="10" placeholder="Max price">
+                <input type="submit" class="button" value="Search">
+            </form>
+            
+        </div>
+    </div>
+    
+    <div class="services">
+        <div class="services_card1">
+            <div class="services_sellcar">
+                <img src="images/Sell.svg" alt="sell icon">
+                <p>Sell your car</p>
+                <div id="option">
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    <li>Eiusmod tempor incididunt ut labore.</li>
+                    <li>Eiusmod tempor incididunt ut labore.</li>
+                </div>
+                <button class="button1">Start now</button>
+            </div>
+            
+        </div>
+        <div class="services_card2">
+            <div class="services_diagnostic">
+                <img src="images/Car Service.svg" alt="Car service icon">
+                <p>Car Diagnostic</p>
+                <p id="option">Have an issue with your car? Let us know the signs, and we'll point you in the correct path.</p>
+                <button class="button2">Get started</button>
+            </div> 
+        </div>
+    </div>
+    <div class="recently">
+        <p>Recently added</p>
+        <div class="left">
+            <img src="images/toyotacorolla.jpg" alt="Toyota corolla car">
+            <div class="container">
+                <p>2002 || Gas || Automatic</p>
+                <p>Toyota Corolla</p>
+                <p>N500,000</p>
+                <button class="button1">View details</button>
+                <!-- <img src="images/like.png"> -->
+            </div>
+            
+        </div>
+        <div class="middle">
+            <img src="images/avalon.jpg" alt="Avalon car">
+            <div class="container">
+                <p>2002 || Gas || Manual</p>
+                <p>Toyota Avalon</p>
+                <p>N500,000</p>
+                <button class="button1">View details</button>
+            </div>
+           
+        </div>
+        <div class="left1">
+            <img src="images/sedanbenz.jpg" alt="Sedan benz car">
+            <div class="container">
+                <p>2022 || Gas || Automatic</p>
+                <p>E 350 Sedan Benz</p>
+                <p>N500,000</p>
+                <div class="button2">View details</div>
+            </div>
+            
+        </div>
+        <div class="right">
+            <img src="images/bmwe34.jpg" alt="BMW car">
+            <div class="container">
+                <p>1988 || Gas || Manual</p>
+                <p>BMW E34</p>
+                <p>N350,000</p>
+                <div class="button2">View details</div>
+            </div>
+            
+        </div>
+        <div class="content">
+            <img src="images/x4bmw.jpg">
+            <p>2015 || Gas || Automatic</p>
+            <p>BMW X4 xDrive</p>
+            <p>N500,000</p>
+            <div class="button2">View details</div>
+            <img src="images/like.png">
+        </div>
+        <div class="content">
+            <img src="images/volkswagen.jpg">
+            <p>2002 || Electric || Automatic</p>
+            <p>Volkswagen ID.4</p>
+            <p>N1,000,000</p>
+            <div class="button2">View details</div>
+            <img src="images/like.png">
+        </div>
+    </div>
+</body>
+</html>

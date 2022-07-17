@@ -1,0 +1,297 @@
+/* carzoom colors */
+/* font */
+*,p {
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+body {
+  background-color: black;
+  color: white;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.topnav {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 5px;
+  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+  margin: 0;
+  align-content: center;
+}
+.topnav a, .dropbtn {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 30px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+.topnav a:hover {
+  background-color: #222222;
+  color: #FF6060;
+}
+.topnav_logo {
+  margin-left: 3%;
+  display: inline-block;
+}
+.topnav_home {
+  margin-left: 20%;
+  display: inline-block;
+}
+.topnav_login {
+  float: right;
+  margin-right: 3%;
+}
+
+.dropdown {
+  display: inline-block;
+  cursor: pointer;
+}
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: auto;
+  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+  z-index: 1;
+}
+.dropdown_content a {
+  color: white;
+  padding: 16px;
+  display: block;
+  text-align: center;
+}
+.dropdown_content a:hover {
+  background-color: #222222;
+}
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+.show{
+  display: block;
+}
+
+.heropage {
+  padding: 0px;
+}
+.heropage img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.search {
+  margin: 0 20% 2% 20%;
+  /* background-color: blue; */
+  align-content: center;
+}
+.search_box {
+  margin: 0px;
+  border: 1px solid white;
+  border-radius: 0px 0px 20px 20px;
+  background-color: black;
+  padding: 30px;
+}
+
+.inputbox{
+  margin-right: 4%;
+  background-color: #D7D7D7;
+  border: 1px solid white;
+  border-radius: 15px;
+  color: black;
+  padding: 14px 30px;
+  cursor: pointer;
+  align-content: left;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.button{
+  /* margin-left: 6%; */
+  float: right;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  color: black;
+  padding: 14px 60px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.button:hover{
+  color: white;
+  background-color: black;
+}
+.search .button1 {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  padding: 14px 80px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.services {
+  margin: 0 20% 0 20%;
+  border-spacing: 50px;
+  align-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.services_card1 {
+  width: 50%;
+  float: left;
+  /* background-color: blue; */
+  padding-right: 25px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.services_card2 {
+  width: 50%;
+  float: right;
+  /* background-color: blue; */
+  padding-left: 25px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.services_sellcar {
+  background-color: white;
+  color: black;
+  padding: 40px 30px;
+  border-radius: 30px;
+}
+.services_diagnostic {
+  background-color: white;
+  color: black;
+  padding: 40px 30px;
+  border-radius: 30px;
+}
+#option{
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.button1{
+  margin-top: 4%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 15px;
+  color: black;
+  padding: 14px 40px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.button1:hover{
+  color: white;
+  background-color: black;
+}
+.button2{
+  margin-top: 5%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 15px;
+  color: black;
+  padding: 14px 40px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.button2:hover{
+  color: white;
+  background-color: black;
+}
+.recently{
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 60%;
+  margin: 30% 20% 20% 20%;
+  background-color: blue;
+  text-align: left;
+  padding: 10px 20px;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.left{
+  float: left;
+  width: 20%;
+  height: 300px;
+  color: black;
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
+}
+.middle{
+  float: left;
+  width: 40%;
+  height: 300px;
+  color: black;
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
+}
+.left1{
+  float: left;
+  width: 80%;
+  height: 300px;
+  color: black;
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
+}
+.right{
+  float: right;
+  width: 20%;
+  height: 300px;
+  color: black;
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
+}
+.recently a{
+  display: inline-block;
+  width: 80%;
+  background-color: white;
+  color: black;
+  border-radius: 0px 0px 10px 10px;
+}
+.recently1{
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 20%;
+  margin: 30% 20% 50% 20%;
+
+}
+.recently_added{
+  width: 80%;
+  background-color: white;
+  color: black;
+  border-radius: 0px 0px 10px 10px;
+}
+.container{
+  text-align: left;
+  padding: 10px 20px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: absolute;
+}
+.recently img{
+  width: 50%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+/*# sourceMappingURL=home.css.map */
