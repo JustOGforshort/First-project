@@ -1,0 +1,442 @@
+/* carzoom colors */
+/* font */
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.topnav {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 5px;
+  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+  margin: 0;
+  align-content: center;
+}
+.topnav a, .dropbtn {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 30px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+.topnav a:hover {
+  background-color: #222222;
+  color: #FF6060;
+}
+.topnav_logo {
+  margin-left: 3%;
+  float: left;
+  padding: 25px;
+}
+.topnav_home {
+  margin-left: 15%;
+  float: left;
+}
+.topnav_login {
+  float: right;
+  margin-right: 3%;
+}
+.dropdown {
+  display: inline-block;
+  cursor: pointer;
+}
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 200px;
+  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+  z-index: 1;
+}
+.dropdown_content a {
+  color: white;
+  padding: 16px;
+  display: block;
+  text-align: center;
+  float: none;
+}
+.dropdown_content a:hover {
+  background-color: black;
+  color: white;
+}
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+.show{
+  display: block;
+}
+
+/* .heropage {
+  padding: 0px;
+  background-size: cover;
+  width: 100%;
+  height: 50%;
+  background-position: center;
+}
+.heropage img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.search {
+  margin: 0 20% 2% 20%;
+  
+  align-content: center;
+ 
+}
+.search_box {
+  margin: 0px;
+  border: 1px solid white;
+  border-radius: 0px 0px 20px 20px;
+  background-color: black;
+  padding: 30px;
+}
+
+.inputbox{
+  margin-right: 4%;
+  background-color: #D7D7D7;
+  border: 1px solid white;
+  border-radius: 15px;
+  color: black;
+  padding: 14px 30px;
+  cursor: pointer;
+  align-content: left;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.button{
+  margin-left: 6%;
+  float: right;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  color: black;
+  padding: 14px 60px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.button:hover{
+  color: white;
+  background-color: black;
+}
+.search .button1 {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  padding: 14px 80px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+} */
+
+.main-img{
+  background-image: url('images/homecar.jpg');
+  height: 10%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  /* position: relative; */
+  align-content: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #FF6060;
+}
+.form{
+  /* position: absolute; */
+  align-content: center;
+  align-self: center;
+  margin: 10% 20% 0 55% ;
+  padding: 20px 30px 40px;
+  background-color: blue;
+  border-radius: 30px;
+}
+input[type=number], select{
+  width: 100%;
+  padding: 10px 80px;
+  margin: 10px 0;
+  display: inline-block;
+  border-radius: 10px;
+  background-color:#E2E2E2;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+input[type=number]:focus, select:focus{
+  background-color: #D7D7D7;
+  outline: none;
+}
+#searchbtn{
+  margin-top: 25px;
+  align-self: center;
+  margin-left: 25%;
+}
+ .btn1{
+  background-color: white;
+  border-radius: 15px;
+  color: black;
+  padding: 14px 80px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.25rem;
+ } 
+ .btn2{
+  background-color: black;
+  border-radius: 15px;
+  color: white;
+  border: 1px solid white;
+  padding: 14px 80px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.25rem;
+
+ }
+ .btn2:hover{
+  background-color: white;
+  color: black;
+ }
+ #nav1{
+  float: left;
+  width: 50%;
+  padding-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+ }
+ #nav2{
+  float: right;
+  width: 50%;
+  padding-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+ }
+.services {
+  margin: 3% 20% 0 20%;
+  border-spacing: 50px;
+  align-content: center;
+}
+.services h1{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+}
+.services li,p{
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: black;
+}
+.services_card1 {
+  width: 50%;
+  height: 50%;
+  float: left;
+  padding-right: 25px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.services_card2 {
+  width: 50%;
+  height: 50%;
+  float: right;
+  padding-left: 25px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.services_sellcar {
+  background-color: white;
+  color: black;
+  padding: 40px 50px;
+  border-radius: 30px;
+}
+.services_diagnostic {
+  background-color: white;
+  color: black;
+  padding: 40px 50px;
+  border-radius: 30px;
+}
+.button1{
+  margin-top: 4%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 15px;
+  color: black;
+  padding: 14px 30px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.button1:hover{
+  color: white;
+  background-color: black;
+}
+.recently{
+  width: 60%;
+  margin: 30% 20% 0% 20%;
+  text-align: center;
+}
+.recently h1{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #FF6060;
+}
+.recently h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+}
+.recently p{
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: black;
+}
+.container{
+  text-align: left;
+  padding: 10px 30px;
+  margin-bottom: 5%;
+}
+#card1{
+  float: left;
+  width: 30%;
+  margin: 2% 3% 3% 0;
+  background-color: white;
+  color: black;
+  border-radius: 0px 0px 20px 20px;   
+}
+#card2{
+  float: left;
+  width: 30%;
+  margin: 2% 2% 3% 2%;
+  background-color: white;
+  color: black;
+  border-radius: 0px 0px 20px 20px; 
+}
+#card3{
+  float: right;
+  width: 30%;
+  margin: 2% 0 3% 3%;
+  background-color: white;
+  color: black;
+  border-radius: 0px 0px 20px 20px; 
+}
+.recently img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+#view{
+  float: right;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 2% 0;
+}
+#view:hover{
+  @import url("fa-light fa-arrow-right-long");
+   /* class="fa-light fa-arrow-right-long" */
+}
+.carbrands{
+  width: 60%;
+  margin: 70% 20% 0 20%;
+  text-align: center;
+}
+.carbrands h1{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #FF6060;
+  margin-bottom: 3%;
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+tr,td{
+  text-align: center;
+  padding: 2%;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: white;
+}
+.footer{
+  padding: 2% 20% 3% 20%;
+  background-color: #222222;
+  align-content: center;
+  margin-top: 3%;
+}
+.footer a{
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0 0 15% 0;
+  padding: 2% 0;
+  display: block;
+  text-decoration: none;
+}
+.footer a:hover{
+  color: #FF6060;
+}
+.footer i{
+  font-size: 2.5rem;
+  color: white;
+  display: inline-block;
+  padding: 5% 5% 0 0;
+  margin: 1% 3% 3% 0;
+}
+.footer img{
+  margin-bottom: 3%;
+}
+#part1{
+  float: left;
+  width: 30%;
+  margin: 2% 3% 3% 0;
+  text-align: left;
+  padding: 2% 0;
+ }
+ #part2{
+  float: left;
+  width: 30%;
+  margin: 2% 2% 3% 2%;
+  text-align: center;
+ }
+ #part3{
+  float: right;
+  width: 30%;
+  margin: 2% 0 3% 3%;
+  align-items: right;
+  text-align: right;
+ }
+ .copyright{
+  border-top: 1px solid white;
+  background-color: none;
+  margin: 27% 0 0 0;
+  align-content: center;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 1.125rem;
+  padding-top: 2%;
+ }
+/*# sourceMappingURL=home.css.map */

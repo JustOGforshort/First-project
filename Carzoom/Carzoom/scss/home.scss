@@ -1,0 +1,230 @@
+@import './designsystem';
+
+@function font($font-name) {
+    @return map-merge($font-weights, $font-size);
+}
+// ul{
+//     list-style-type: none;
+//     background: $primarycolor;
+//     color: $secondarycolor;
+//     padding: 5px;
+//     box-shadow: 0px 4px 4px rgba(255,255,255,0.25);
+//     margin: 0;
+//     align-content: center;
+// }
+// li{display: inline-block;}
+// li a, .dropbtn{
+//     text-align: center;
+//     color: $secondarycolor;
+//     text-decoration: none;
+//     padding: 20px;
+//     display: inline-block;
+// }
+// li.dropdown{
+//     display: inline-block;
+// }
+// li a:hover, .dropdown:hover .dropbtn{
+//     background-color: $footercolor;
+//     color: $accentcolor;
+// }
+// .dropdown-content{
+//     display: none;
+//     position: absolute;
+//     background-color: $secondarycolor;
+//     min-width: 160px;
+//     box-shadow: 0px 4px 4px rgba(255,255,255,0.25);
+//     z-index: 1;
+
+//     a{
+//         color: $primarycolor;
+//         padding: 12px 16px;
+//         display:block;
+//         text-align: left;
+//     }
+//     &:hover .dropdown-content{
+//     display: block;
+//     }
+// }
+
+// .logo{
+//     margin-left: 3%;
+//     display: inline-block; 
+// }
+// .home{
+//     margin-left: 20%;
+//     display: inline-block;
+// }
+// .login{
+//     float: right;
+//     margin-right: 3%;
+// }
+
+.topnav{
+    position: fixed;
+    top: 0;
+    background: $primarycolor;
+    color: $secondarycolor;
+    padding: 5px;
+    box-shadow: 0px 4px 4px rgba(255,255,255,0.25);
+    margin: 0;
+    align-content: center;
+    
+    #{a}{
+        text-align: center;
+        color: $secondarycolor;
+        text-decoration: none;
+        padding: 30px;
+        display: inline-block;
+        font: font(heading5, medium);
+
+        &:hover{
+            background-color: $footercolor;
+            color: $accentcolor;
+        }
+
+    }
+    &_logo{
+        margin-left: 3%;  
+        display: inline-block;
+    }
+    &_home{
+        margin-left: 20%;
+        display: inline-block;
+    }
+    &_login{
+        float: right;
+        margin-right: 3%;
+    }
+    
+}
+.dropdown{
+    display: inline-block;
+    cursor: pointer;
+
+    &_content{
+        display: none;
+        position: absolute;
+        background-color: $primarycolor;
+        min-width: auto;
+        box-shadow: 0px 4px 4px rgba(255,255,255,0.25);
+        z-index: 1;
+        
+        a{
+            float: none;
+            color: $secondarycolor;
+            padding: 16px;
+            display: block;
+            text-align: center;
+
+            &:hover{
+                background-color: $footercolor;
+            }
+        }
+    }
+    &:hover &_content{
+        display: block;
+    }
+}
+.show{
+    display: block;
+    
+}
+.dropbtn{
+    @extend .topnav;
+}
+.heropage{
+    padding:0px;
+
+    img{
+        object-fit: cover;
+        // object-position:top;
+        width: 100%;
+        // height: 1%;
+    }
+}
+.search{
+    margin: 0 20% 2% 20%;
+    // border-radius: 0px 1px 20px 20px solid white;
+    // border-width: 0px 1px 1px 1px;
+    align-content: center;
+    padding: 0px;
+
+    &_box{
+        margin: 0px;
+        border: 1px solid white;
+        border-radius: 0px 0px 20px 20px ;
+        // border-width: 0px 1px 1px 1px;
+        background-color: $primarycolor;
+        padding: 70px;
+    }
+    &_inputbox[type=select] {
+        width: 100%;
+        background-color: $inputcolor;
+        color: #4E4E4E;
+        // $weight:weight(regular);
+        // font-size: 1.25rem;
+        font: font(heading4, regular);
+        border-radius: 10px;
+        display: inline-block;
+        padding: 30px;
+    }
+#button1 {
+    width: 100%;
+    border: 1px solid $secondarycolor;
+    border-radius: 20px;
+    color: $secondarycolor;
+    padding: 14px 80px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;   
+    
+    :hover{
+        box-shadow: 0px 4px 4px $secondarycolor;
+    }
+}   
+}
+.services{
+    margin: 0 20% 0 20%;
+    border-spacing: 50px;
+
+    &_card1{
+        width: 50%;
+        float: left; 
+        background-color: blue;
+        padding-right: 25px;
+    }
+
+    &_card2{
+        width: 50%;
+        float: right;
+        background-color: blue;
+        padding-left: 25px;
+    }
+
+    &_sellcar{
+        background-color: $secondarycolor;
+        color: $primarycolor;
+        padding: 50px 30px;
+        border-radius: 30px;
+    }
+
+    &_diagnostic{
+        background-color: $secondarycolor;
+        color: $primarycolor;
+        padding: 50px 30px;
+        border-radius: 30px;
+    }
+    img{
+        width: auto;
+    }
+}
+button{
+    width: 100%;
+    border: 1px solid $secondarycolor;
+    border-radius: 20px;
+    color: $secondarycolor;
+    padding: 14px 80px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}

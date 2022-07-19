@@ -1,0 +1,33 @@
+/* carzoom colors */
+$primarycolor: black;
+$secondarycolor: white;
+$accentcolor: #FF6060;
+$footercolor: #222222;
+$inputcolor: #D7D7D7;
+
+/* font */
+$font-weights: (
+    "light": 300,
+    "regular": 400,
+    "medium" : 500,
+    "semibold": 600
+);
+$font-size: (
+    "heading1": 2.5rem,
+    "heading2": 2rem,
+    "heading3": 1.5rem,
+    "heading4": 1.25rem,
+    "heading5": 1.125rem,
+    "heading6": 1rem
+);
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: $primarycolor;
+    color: $secondarycolor;
+    width: 100%; 
+    overflow-x: hidden; 
+    font-family: sans-serif;
+}
