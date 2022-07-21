@@ -14,19 +14,31 @@
 </head>
 
 <body>
-    
+    <script>
+        function myFunction(){
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onlick = function(e){
+            if (!e.target.matches('.dropbtn')){
+                var myDropdown= document.getElementById("myDropdown");
+                if(myDropdown.classList.contains('show')){
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
     <div class="topnav">
         <div class="topnav_logo">
-            <img src="images/Carzoom.png" alt="Carzoom logo">
+            <img src="images/Carzoom.png" alt="Carzoom icon">
         </div>
         <div class="topnav_home">
-            <a href="#" class="active">Home</a>
-            <a href="file:///C:/Users/USER/Documents/VS%20CODE/Carzoom/about.html#">About us</a>
+            <a href="#">Home</a>
+            <a href="#">About us</a>
             <div class="dropdown">
-                <a class="dropbtn" href="javascript:void(0)">Car brands
+                <a class="dropbtn" onclick="myFunction()">Car brands
                     <i class="fa fa-caret-down"></i>
                 </a>
-                <div class="dropdown_content">
+                <div class="dropdown_content" id="myDropdown">
                     <a href="#">Audi</a>
                     <a href="#">Mercedez benz</a>
                     <a href="#">Mazda</a>
@@ -44,13 +56,13 @@
             <a href="#">Sell</a>
         </div>
         <div class="topnav_login">
-            <a href="file:///C:/Users/USER/Documents/VS%20CODE/Carzoom/register.html" style="border-right: 1px solid white;">Register</a>
-            <a href="file:///C:/Users/USER/Documents/VS%20CODE/Carzoom/login.html">Log in</a>
+            <a href="#">Register</a>
+            <a href="#">Log in</a>
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
     </div>
 
-    <div class="main" style="background-image: url('images/another.jpg')">
+    <div class="main-img">
         <form class="form">
             <h3>A better approach to buy used automobiles</h3>
             <p style="color: white;">Delivery or collection within 5days</p>
@@ -74,6 +86,27 @@
             <button type="submit" class="btn2" id="searchbtn">Search</button>
         </form>
     </div>
+
+    <!-- <div class="heropage">
+        <img src="images/homecar.jpg" alt="Car image">
+        <div class="search">
+            <form class="search_box">
+                <select class="inputbox" name="make" placeholder="Car make">
+                    <option value="mazda">Mazda</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="lexus">Lexus</option>
+                </select>
+                <select class="inputbox" name="model" placeholder="Car model">
+                    <option value="mazda">Mazda</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="lexus">Lexus</option>
+                </select>
+                <input type="number" name="price" class="inputbox" maxlength="10" placeholder="Max price">
+                <input type="submit" class="button" value="Search">
+            </form>
+            
+        </div>
+    </div> -->
     
     <div class="services">
         <div class="services_card1">
@@ -94,7 +127,7 @@
                 <img src="images/Car Service.svg" alt="Car service icon">
                 <h1><b>Car diagnostic</b></h1>
                 <p>Have an issue with your car? Let us know the signs, and we'll point you in the correct path.</p>
-                <button class="button2">Get started</button>
+                <button class="button1">Get started</button>
             </div> 
         </div>
     </div>

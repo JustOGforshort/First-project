@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+  
+body {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+  
+.topnav {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 5px;
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+    margin: 0;
+    align-content: center;
+}
+.topnav a, .dropbtn {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.topnav a:hover {
+    background-color: #222222;
+    color: #FF6060;
+}
+.topnav_logo {
+    margin-left: 4%;
+    float: left;
+    padding: 25px;
+}
+.topnav_home {
+    margin-left: 15%;
+    float: left;
+}
+.topnav_login {
+    float: right;
+    margin-right: 4%;
+}
+.dropdown {
+    display: inline-block;
+    cursor: pointer;
+}
+  
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 200px;
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+    /* z-index: 2; */
+}
+.dropdown_content a {
+    color: white;
+    padding: 16px;
+    display: block;
+    text-align: center;
+}
+.dropdown_content a:hover .dropbtn{
+    background-color: black;
+    color: white;
+}
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+/* .show{
+    display: block;
+} */
+.active{
+    color: #FF6060 !important;
+}
+.first{
+  height: auto;
+  align-content: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: black;
+  padding: 10% 0 50% 0;
+
+}
+.first img {
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+
+}
+.get {
+    align-content: center;
+    align-self: center;
+    margin: 30% 35% 0 35% ;
+    padding: 20px 50px 20px 50px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: left;
+    height: 800px;
+}
+input[type=text], input [type=password] {
+    width: 100% ; 
+    padding: 10px 30px ;
+    margin: 10px 0 40px 0 ;
+    display: inline-block ;
+    border-radius: 5px;
+    background-color:#fadada;
+    text-align: left ;
+    font-weight: 400 ;
+    font-size: 1.125rem ;
+    border-width: 1px;
+}
+input[type=number]:focus, input [type=password]:focus{
+    background-color: #FEC8C8;
+    outline: none;
+}
+.get p{
+    color: black;
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin: 10px 0 40px 0;
+    text-align: center;
+}
+.get h3{
+    color: black;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 32px 0 20px 0;
+    text-align: center;
+}
+.get a{
+    color: #FF6060;
+    text-decoration: none;
+}
+.btn1{
+    margin: 10%;
+    margin-left: 20%;
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+    padding: 14px 80px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.25rem;
+} 
+.btn1:hover{
+    background-color: black;
+    color: white;
+}
+
+#box{
+    margin-top: 10px;
+    width: 100% ; 
+    padding: 10px 30px ;
+    display: inline-block ;
+    border-radius: 5px;
+    background-color:#fadada;
+    text-align: left ;
+    font-weight: 400 ;
+    font-size: 1.125rem ;
+    border-width: 1px;
+}
