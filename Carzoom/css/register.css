@@ -88,7 +88,7 @@ body {
   font-size: 1.25rem;
   font-weight: 400;
   color: black;
-  padding: 10% 0 50% 0;
+  padding: 7% 0 50% 0;
 
 }
 .first img {
@@ -101,7 +101,7 @@ body {
 .get {
     align-content: center;
     align-self: center;
-    margin: 30% 35% 0 35% ;
+    margin: 0 35% 10% 35% ;
     padding: 20px 50px 20px 50px;
     background-color: white;
     border-radius: 20px;
